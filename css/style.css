@@ -1,0 +1,124 @@
+.wrapper {
+    margin: 0 auto;
+    background-image: url(../images/photoshop/design-assets/bgk-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.top {
+    overflow: hidden;
+    display: flex;
+    padding-top: 2rem;
+}
+
+.top-left {
+    display: flex;
+    font-size: 40px;
+    width: 30%;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.top-left h1 {
+    background: #67D8CD;
+    background: -webkit-linear-gradient(to right, #67D8CD 0%, #5794BA 100%);
+    background: -moz-linear-gradient(to right, #67D8CD 0%, #5794BA 100%);
+    background: linear-gradient(to right, #67D8CD 0%, #5794BA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Work Sans',sans-serif ;
+
+}
+
+/*-------------------TOP RIGHT----------------*/
+.top-right {
+    text-transform: uppercase;
+    width: 70%;
+    padding-top: 1em;
+}
+
+.top-right ul {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.top-right ul li {
+    padding-left: 2em;
+    
+}
+
+.top-right a {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#home-color {
+    color: #68DACD
+}
+/*--------------------TOP RIGHT------------------*/
+
+
+/*--------------------BOTTOM------------------*/
+.bottom {
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.bottom h1  {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.bottom p {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.bottom button {
+    margin-top: 60px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    padding: 10px;
+    border: 1px solid #68DACD;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #68DACD;
+    
+    border-radius: 3px;
+}
+
+.bottom button:hover {
+    color: rgb(0, 0, 0);
+    background-color: #68dacd;
+    transition: 0.6s;
+    
+}
+
+.invisible {
+    color: rgba(0, 0, 0, 0);
+}
+
+/*--------------------BOTTOM------------------*/
+
