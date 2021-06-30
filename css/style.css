@@ -1,3 +1,24 @@
+/* -----------------SHORTCUTS-------------- */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.invisible {
+    color: rgba(0, 0, 0, 0);
+}
+
+.button {
+    padding: 10px;
+    border: 1px solid #68DACD;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    font-size: 24px;
+    color: #68DACD;
+    border-radius: 3px;
+    width: 180px;
+}
+
+/* -----------------SHORTCUTS-------------- */
 .wrapper {
     margin: 0 auto;
     background-image: url(../images/photoshop/design-assets/bgk-header.png);
@@ -33,7 +54,6 @@
 
 /*-------------------TOP RIGHT----------------*/
 .top-right {
-    text-transform: uppercase;
     width: 70%;
     padding-top: 1em;
 }
@@ -58,7 +78,7 @@
 #home-color {
     color: #68DACD
 }
-/*--------------------TOP RIGHT------------------*/
+/*--------------------TOP RIGHT END------------------*/
 
 
 /*--------------------BOTTOM------------------*/
@@ -93,32 +113,106 @@
 }
 
 .bottom button {
-    margin-top: 60px;
-    width: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-    padding: 10px;
-    border: 1px solid #68DACD;
-    background-color: rgba(255, 255, 255, 0);
-    cursor: pointer;
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #68DACD;
-    
-    border-radius: 3px;
+    margin: 60px auto 200px;
 }
 
 .bottom button:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color: #68dacd;
     transition: 0.6s;
     
 }
 
-.invisible {
-    color: rgba(0, 0, 0, 0);
+
+
+/*----------------------------BOTTOM END-------------------------------*/
+/*------------------------- END OF WEBSITE HEADER ------------------------------- */
+
+
+/*-------------------------- OUR STORY SECTION -----------------------------------*/
+
+.our-story {
+    display: flex;
+    position: relative;
 }
 
-/*--------------------BOTTOM------------------*/
+.big-logo {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
 
+.our-story-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7em;
+    margin-left: auto;
+    width: 55%;
+}
+
+.story-button button {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.story-button button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #68dacd;
+    transition: 0.6s;
+    
+}
+
+.our-story-text h1 {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+}
+
+.our-story-text p {
+    width: 60%;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+/*-------------------------- OUR STORY SECTION END -----------------------------------*/
+
+
+
+/*-------------------------- STORY VIDEO SECTION -----------------------------------*/
+.watch-story {
+    background-image: url(../images/photoshop/design-assets/bgk-middle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15em 0;
+}
+
+.play-button {
+    display: flex;
+    justify-content:center;
+    
+}
+
+.play-title {
+    display: flex;
+    justify-content:center;
+    padding-top: 3em;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------ STORY VIDEO SECTION END -----------------------------------*/
