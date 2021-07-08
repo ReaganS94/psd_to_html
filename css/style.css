@@ -1,4 +1,5 @@
 /* -----------------SHORTCUTS-------------- */
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -8,40 +9,64 @@
 }
 
 .button {
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #68DACD;
     background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
     font-size: 24px;
     color: #68DACD;
     border-radius: 3px;
-    width: 180px;
+    width: 200px;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grey-borders {
+    border-bottom: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+}
+
+.square {
+    width: 280px;
+    height: 320px;
+    background-color: #ffffff;
+}
+
+.rectangle {
+    width: 278px;
+    height: 80px;
+    background-color: #00000000;
+    border: 1px solid #E8E8E8;
+}
 /* -----------------SHORTCUTS-------------- */
 .wrapper {
-    margin: 0 auto;
     background-image: url(../images/photoshop/design-assets/bgk-header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .top {
-    overflow: hidden;
     display: flex;
-    padding-top: 2rem;
+    padding-top: 2em;
 }
 
 .top-left {
     display: flex;
     font-size: 40px;
-    width: 30%;
+    width: 25%;
     justify-content: flex-end;
     flex-direction: row;
 }
 
-.top-left h1 {
+.logo-name {
     background: #67D8CD;
     background: -webkit-linear-gradient(to right, #67D8CD 0%, #5794BA 100%);
     background: -moz-linear-gradient(to right, #67D8CD 0%, #5794BA 100%);
@@ -81,7 +106,7 @@
 /*--------------------TOP RIGHT END------------------*/
 
 
-/*--------------------BOTTOM------------------*/
+/*--------------------TOP-BOTTOM------------------*/
 .bottom {
     color: white;
     display: inline-flex;
@@ -99,6 +124,7 @@
     text-transform: capitalize;
     font-family: 'Playfair Display', serif;
     font-weight: 500;
+    padding-bottom: .5em;
 }
 
 .bottom p {
@@ -110,6 +136,7 @@
     text-align: center;
     line-height: 1.5;
     font-family: sans-serif;
+    padding-top: 1em;
 }
 
 .bottom button {
@@ -125,7 +152,7 @@
 
 
 
-/*----------------------------BOTTOM END-------------------------------*/
+/*----------------------------TOP-BOTTOM END-------------------------------*/
 /*------------------------- END OF WEBSITE HEADER ------------------------------- */
 
 
@@ -153,10 +180,7 @@
 }
 
 .story-button button {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 60px auto 200px;
 }
 
 .story-button button:hover {
@@ -170,12 +194,16 @@
     font-size: 24px;
     font-family: 'Playfair Display', serif;
     font-weight: lighter;
+    color: #505050;
+    padding-bottom: .5em;
 }
 
 .our-story-text p {
-    width: 60%;
+    width: 70%;
     line-height: 1.5;
     font-family: sans-serif;
+    color: #505050;
+    padding-bottom: 1em;
 }
 
 /*-------------------------- OUR STORY SECTION END -----------------------------------*/
@@ -204,15 +232,426 @@
     font-family: sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------ STORY VIDEO SECTION END -----------------------------------*/
+
+/* ---------------------------------------EXPERTISE SECTION--------------------------------- */
+
+.expertise {
+    margin-top: 6em;
+}
+
+.expertise-title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #505050;
+    margin-bottom: 0.5em;
+}
+
+.expertise-title h3 {
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.squares {
+    width: 70%;
+    margin: 6em auto
+}
+
+.monitor {
+    padding-bottom: 3em;
+    width: 33%;
+}
+
+.pen {
+    width: 33%;
+}
+
+.mobile {
+    border-bottom: 1px solid #E8E8E8;
+    width: 33%;
+}
+
+.graph {
+    border-right: 1px solid #E8E8E8;
+    padding-top: 3em;
+    width: 33%;
+}
+
+.game {
+    border-right: 1px solid #E8E8E8;
+    width: 33%;
+    padding-top: 3em;
+}
+
+.heart {
+    width: 33%;
+    padding-top: 3em;
+}
+
+.squares-top {
+    width: 100%;
+}
+
+.squares-bottom {
+    width: 100%;
+}
+
+.squares h2 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #505050
+}
+
+.squares p {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: grey;
+    width: 80%;
+    margin: 0 auto;
+}
+/* ---------------------------------------EXPERTISE SECTION END--------------------------------- */
+
+/* ---------------------------------------TEAM SECTION--------------------------------- */
+
+.team-pics {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.team-tags {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.team-tags h2 {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.team-tags h3 {
+    color: #D0D0D0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.name {
+    padding: 1em;
+}
+
+.team {
+    background-image: url(/images/photoshop/design-assets/bgk-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-title h2 {
+    padding-top: 3em;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.team-title h3 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding-bottom: .5em;
+}
+
+.team-title {
+    margin-bottom: 3em;
+}
+
+.team-button button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #68dacd;
+    transition: 0.6s;
+}
+
+.team-button button {
+    margin: 1.5em auto 4.5em;
+}
+
+.team-footer {
+    margin-top: 6em;
+}
+
+.team-footer h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.member-1 {
+    background-image: url(/images/female-pirate.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.member-2 {
+    background-image: url(/images/captain.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.member-3 {
+    background-image: url(/images/quartermaster.png);
+    background-size: cover;
+}
+
+.member-4 {
+    background-image: url(/images/pc-pirate.jpg);
+    background-size: cover;
+}
+/* ----------------------------------TEAM SECTION END------------------------------ */
+
+
+/* -----------------------CLIENT SECTION ------------------- */
+
+/* left */
+.client-wrapper {
+    display: flex;
+    width: 66%;
+    margin: 7em auto 5em;
+}
+
+.left {
+    width: 50%;
+}
+
+.inner-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-left h2, .right h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #505050
+}
+
+.inner-left input:nth-child(-n+4) {
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.inner-left textarea {
+    margin: 1.5em 0 1.5em;
+    padding: 1em;
+}
+
+/* right */
+.right {
+    width: 50%;
+}
+
+.inner-right {
+    display: flex;
+    margin-left: 25%;
+    width: 100%;
+}
+
+.right h2 {
+    margin-bottom: 2em;
+    margin-left: 25%;
+}
+
+.inner-right img {
+    width: 140px;
+    padding-bottom: 3em;
+}
+
+.pics-left {
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.pics-right {
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.inner-left .button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #68dacd;
+    transition: 0.6s;
+}
+
+/* -----------------------CLIENT SECTION END------------------- */
+
+/* -------------SECTION FOOTER------------- */
+footer {
+    display: flex;
+    background-image: url(/images/photoshop/design-assets/bgk-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+section.footer-wrapper {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 5em;
+}
+
+/*-------- WRAPPER LEFT ----------*/
+
+.wrapper-left {
+    width: 33%;
+    margin-left: 3%;
+    color: white;
+    font-family: sans-serif;
+    line-height: 2em;
+}
+
+.footer-logo {
+    display: flex;
+    font-size: 40px;
+    flex-direction: row;
+    padding-bottom: .5em;
+}
+
+/*-------- WRAPPER MIDDLE ----------*/
+
+.wrapper-middle {
+    width: 33%;
+    line-height: 2em;
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10em;
+}
+
+.wrapper-middle h3 {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 1.75em;
+}
+
+.location p {
+    color: white;
+    margin-left: 1em;
+}
+
+.inliner {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.location {
+    white-space: nowrap;
+    display: flex;
+}
+
+.location img {
+    align-self: baseline;
+}
+
+.phone-number {
+    margin-left: 1em;
+}
+
+.phone {
+    display: flex;
+}
+
+.phone  img {
+    align-self: center;
+}
+
+
+/*-------- WRAPPER RIGHT ----------*/
+
+.wrapper-right {
+    width: 33%;
+    line-height: 2em;
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10em;
+}
+
+.wrapper-right h3 {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.subscribe-bar {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.subscribe-bar ::placeholder {
+    color: rgb(206, 202, 202);
+}
+
+.subscribe-bar input:first-child{
+    margin-top: 2em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(143, 140, 140);
+    width: 180px;
+    color: white;
+}
+
+.airplane {
+    align-self: end;
+    margin-left: .5em;
+    padding: .9em 1.75em .6em;
+    background-color: rgba(245, 245, 245, 0.450);
+    align-self: flex-end;
+}
+
+.airplane:hover {
+    background-color: rgba(255, 255, 255, 0.750);
+}
+
+.social img:nth-child(n + 2){
+    margin-left: .25em;
+}
+/* -------FOOTER BOTTOM--------- */
+
+.footer-bottom {
+    display: flex;
+    width: 66%;
+    margin: 0 auto;
+    padding: 5em 0 4em;
+    justify-content: space-between;
+}
+
+.bottom-left {
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.bottom-left h3 {
+    font-weight: 600;
+}
+
+.bottom-left h3:nth-child(n + 2) {
+    padding-left: 5em;
+}
+
+.bottom-right h4 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+/* -------------SECTION FOOTER END------------- */
