@@ -90,7 +90,7 @@
 }
 
 .top-right ul li {
-    padding-left: 2em;
+    margin-left: 2em;
     
 }
 
@@ -109,6 +109,14 @@
 
 
 /*--------------------TOP-BOTTOM------------------*/
+@media (max-width: 870px){
+    .bottom h1 {
+        max-width: 70%;
+        text-align: center;
+    }
+
+}
+
 .bottom {
     color: white;
     display: inline-flex;
@@ -136,7 +144,7 @@
     margin-right: auto;
     width: 50%;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.7;
     font-family: sans-serif;
     padding-top: 1em;
 }
@@ -226,6 +234,12 @@
     
 }
 
+.play-button img:hover {
+    background-color: rgba(192, 192, 192, 0.400);
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
 .play-title {
     display: flex;
     justify-content:center;
@@ -238,183 +252,222 @@
 
 /* ---------------------------------------EXPERTISE SECTION--------------------------------- */
 
-.expertise {
-    margin-top: 6em;
+.border {
+    background-color: white;
+  } 
+  .grid {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    margin-bottom: 1em;
+  }
+
+.grid > div {
+    background-color: white;
+    padding: 2em 0 3em 0; 
+  }
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}  
+
+.icon{
+    margin: auto;
+    padding: 0 1em 1em 1em;
 }
 
-.expertise-title h2 {
+.expertise-headline h2 {
     font-size: 24px;
     font-weight: bold;
     color: #505050;
     margin-bottom: 0.5em;
 }
 
-.expertise-title h3 {
+.expertise-text p {
     color: grey;
     font-size: 20px;
     margin-bottom: 1em;
 }
 
-.squares {
+.heading-expertise{
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 1em;
+}
+
+.text-expertise{
+    text-align: center;
+    line-height: 1.3em;
+    color: darkgray;
+    padding: 0 1em 1em 1em;
+}
+
+.heading-expertise h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+
+.text-expertise p{
+    font-family: sans-serif; 
+    line-height: 1.5em;
+}
+
+
+.expertise-text hr {
+    margin-bottom: 3em;
+}
+
+.expertise {
     width: 70%;
-    margin: 6em auto
+    margin: 4em auto;
 }
 
-.monitor {
-    padding-bottom: 3em;
-    width: 33%;
+@media (max-width: 884px){
+    .expertise {
+        margin: 1em auto;
+        width: 90%;
+    }
+
+    .expertise h2{
+        margin-top: 2.5em;
+    }
 }
 
-.pen {
-    width: 33%;
-}
 
-.mobile {
-    border-bottom: 1px solid #E8E8E8;
-    width: 33%;
-}
+/*START TEAM*/
 
-.graph {
-    border-right: 1px solid #E8E8E8;
-    padding-top: 3em;
-    width: 33%;
-}
-
-.game {
-    border-right: 1px solid #E8E8E8;
-    width: 33%;
-    padding-top: 3em;
-}
-
-.heart {
-    width: 33%;
-    padding-top: 3em;
-}
-
-.squares-top {
-    width: 100%;
-}
-
-.squares-bottom {
-    width: 100%;
-}
-
-.squares h2 {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    font-family: sans-serif;
-    font-weight: 600;
-    color: #505050
-}
-
-.squares p {
-    font-family: sans-serif;
-    line-height: 1.5;
-    color: grey;
-    width: 80%;
-    margin: 0 auto;
-}
-/* ---------------------------------------EXPERTISE SECTION END--------------------------------- */
-
-/* ---------------------------------------TEAM SECTION--------------------------------- */
-
-.team-pics {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.team-tags {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.team-tags h2 {
-    color: whitesmoke;
-    font-family: sans-serif;
-    font-weight: 600;
-}
-
-.team-tags h3 {
-    color: #D0D0D0;
-    font-family: sans-serif;
-    font-weight: lighter;
-}
-
-.name {
-    padding: 1em;
-}
-
-.team {
+.team{
     background-image: url(/images/photoshop/design-assets/bgk-header.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 900px;
 }
 
-.team-title h2 {
+.team-header h2 {
     padding-top: 3em;
     color: whitesmoke;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: .5em;
+    text-align: center;
 }
 
-.team-title h3 {
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    padding-bottom: .5em;
-}
-
-.team-title {
-    margin-bottom: 3em;
-}
-
-.team-button button:hover {
-    color: rgb(255, 255, 255);
-    background-color: #68dacd;
-    transition: 0.6s;
-}
-
-.team-button button {
-    margin: 1.5em auto 4.5em;
-}
-
-.team-footer {
-    margin-top: 6em;
-}
-
-.team-footer h2 {
+.team-header h3 {
     color: white;
     font-family: sans-serif;
     font-size: 16px;
+    padding-bottom: .5em;
+    text-align: center;
 }
 
-.member-1 {
+.team-header {
+    margin-bottom: 3em;
+}
+
+/* PHOTOPART */
+
+.team-photos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 5em;
+}
+
+.photo1, .photo2, .photo3, .photo4 {
+    width: 260px;
+    height: 300px;
+    background-color: white;
+    margin-left: 1em;
+
+}
+
+.photo1 {
     background-image: url(/images/female-pirate.jpg);
     background-size: cover;
     background-position-x: center;
 }
 
-.member-2 {
+.photo2 {
     background-image: url(/images/captain.jpg);
     background-size: cover;
     background-position-x: center;
 }
 
-.member-3 {
+.photo3 {
     background-image: url(/images/quartermaster.png);
     background-size: cover;
 }
 
-.member-4 {
+.photo4 {
     background-image: url(/images/pc-pirate.jpg);
     background-size: cover;
 }
-/* ----------------------------------TEAM SECTION END------------------------------ */
+
+.team-names{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.team-names h3 {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-bottom: .75em;
+    font-size: 14px;
+}
+
+.team-names p {
+    color: #D0D0D0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.name1, .name2, .name3, .name4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 258px;
+    background-color:transparent;
+    border: solid 1px white;
+    margin-left: 1em;
+    color: white;
+ 
+}
+
+.team-bottom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team-bottom p{
+    color: white;
+    margin: 4em 0 2em;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.team-bottom button {
+    margin: 0 auto;
+}
+
+.team-bottom button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #68dacd;
+    transition: 0.6s;
+}
 
 
 /* -----------------------CLIENT SECTION ------------------- */
@@ -468,7 +521,7 @@
 }
 
 .inner-right img {
-    width: 140px;
+    width: 50%;
     padding-bottom: 3em;
 }
 
@@ -623,8 +676,13 @@ section.footer-wrapper {
     background-color: rgba(255, 255, 255, 0.750);
 }
 
-.social img:nth-child(n + 2){
+.social a:nth-child(n + 2){
     margin-left: .25em;
+}
+
+.social img:hover {
+    background-color: rgba(192, 192, 192, 0.600);
+    border-radius: 50%;
 }
 /* -------FOOTER BOTTOM--------- */
 
@@ -636,9 +694,12 @@ section.footer-wrapper {
     justify-content: space-between;
 }
 
+.footer-bottom a {
+    color: white;
+}
+
 .bottom-left {
     display: flex;
-    color: white;
     font-family: sans-serif;
     font-size: 14px;
 }
