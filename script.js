@@ -7,3 +7,8 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop : 0}, 800);
     });
 });
+
+$('#play').click(function(){
+    video = '<iframe src="'+ $(this).attr('data-video') +'" width="500px" height="315px" autoplay></iframe>';
+    $(this).replaceWith(video);
+});

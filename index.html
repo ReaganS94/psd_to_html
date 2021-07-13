@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tajam</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> 
+<script>
+    /*to prevent Firefox FOUC, this must be here*/
+    let FF_FOUC_FIX;
+</script>
 </head>
 <body>
     
@@ -26,17 +30,17 @@
             <div class="top-right uppercase">
                 <ul>
                     <li class="active"><a href="#">home</a></li>
-                    <li><a href="#" id="button2">about</a></li>
-                    <li><a href="#" id="button3">expertise</a></li>
-                    <li><a href="#" id="button4">teams</a></li>
-                    <li><a href="#" id="button5">works</a></li>
+                    <li><a href="#story" id="button2">about</a></li>
+                    <li><a href="#expertise" id="button3">expertise</a></li>
+                    <li><a href="#team" id="button4">teams</a></li>
+                    <li><a href="#works" id="button5">works</a></li>
                     <li><a href="#" id="button6">people say</a></li>
-                    <li><a href="#" id="button7">contact</a></li>
+                    <li><a href="#footer" id="button7">contact</a></li>
                 </ul>
             </div>
         </div>
         <div class="bottom">
-            <h1>we are an awesome creative team</h1>
+            <h1>we are an awesome pirate crew... arrr</h1>
             
             <hr style="height:1px; width:5%; border-width:0; color:rgb(127, 255, 212); background-color:rgb(127, 255, 212)">
             
@@ -49,16 +53,16 @@
 <!-- -----------------TOP SECTION END------------------ -->
 
 <!-- -----------------OUR STORY SECTION------------------ -->
-    <section class="our-story">
+    <section class="our-story" id="story">
         <div class="big-logo">
             <img src="./images/photoshop/design-assets/png/logo-big.png" alt="" width="235px" height="229px">
         </div>
         <div class="our-story-text">
             <h1 class="uppercase">our story</h1>
             
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa asperiores nulla unde ut dignissimos dolorem ducimus dicta sapiente ullam facilis laborum voluptates cum quos, sint ad quaerat necessitatibus harum quibusdam.</p>
+            <p>You’re drinking a Salty Dog? How’d you like to try the real thing? Is that a belayin’ pin in yer britches, or are ye …  Why is the rum gone? Right from the Voyage og Noah, surviving was by sailing. Avast ye! and sail against the tides.</p>
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut quisquam omnis doloribus rem! Consequuntur sint, molestiae labore eaque saepe, tempore aliquam nemo placeat, nisi pariatur provident voluptate fugit sequi!</p>
+            <p>Why is the rum gone? If ye thinks he be ready to sail a beauty, ye better be willin’ to sink with her. The Code is more like guidelines, really. Prepare to be boarded. That’s the finest pirate booty I’ve ever laid eyes on. Is that a belayin’ pin in yer britches, or are ye …  Piracy – Hostile take over.</p>
             <div class="story-button">
                 <button class="button uppercase" type="button">Learn More</button>
             </div>
@@ -69,7 +73,7 @@
 <!-- -----------------STORY VIDEO SECTION------------------ -->
     <section class="watch-story">
         <div class="play-button">
-            <img src="./images/photoshop/design-assets/png/play.png" alt="">
+            <img src="./images/photoshop/design-assets/png/play.png" id="play" data-video="https://www.youtube.com/embed/3YFeE1eDlD0" alt="">
         </div>
         <div class="play-title">
             <h2 class="uppercase">watch our story</h2>
@@ -77,10 +81,9 @@
     </section>
 <!-- -----------------STORY VIDEO SECTION END------------------ -->
 
+     <!------------------START OF EXPERTISE GRID--------------->
 
-     <!--START OF EXPERTISE GRID-->
-
-    <div class="expertise">
+    <div class="expertise" id="expertise">
         <div class="expertise-headline uppercase text-center">
             <h2>expertise</h2>
         </div>
@@ -166,9 +169,9 @@
         </div>
     </div>
 <!-- -----------------EXPERTISE SECTION END------------------ -->
+<!------------------------ TEAM SECTION---------------- ---------->
 
-
-    <div class="team">
+    <div class="team" id="team">
         <div class="team-header">
             <h2 class="uppercase text-center">meet our amazing team</h2>
             <h3 class="text-center">Lorem ipsum dolor sit amet, consectetur adipis lac et al amet amet</h3>
@@ -208,7 +211,7 @@
 
 
 <!-- -----------------CLIENT SECTION ------------------ -->
-    <section class="client">
+    <section class="client" id="works">
         <div class="client-wrapper">
             <div class="left">
                 <div class="inner-left">
@@ -248,12 +251,12 @@
         
     </section>
 
-<!-- -----------------CLIENT SECTION END------------------ -->
+<!-------------------CLIENT SECTION END------------------->
 
 <!-------------------- SECTION FOOTER -------------------->
     
     <footer>
-        <section class="footer-wrapper">
+        <section class="footer-wrapper" id="footer">
 
             <!-------- WRAPPER LEFT ---------->
             <div class="wrapper-left">
