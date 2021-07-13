@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tajam</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> 
+<script>
+    /*to prevent Firefox FOUC, this must be here*/
+    let FF_FOUC_FIX;
+</script>
 </head>
 <body>
     
@@ -26,12 +30,12 @@
             <div class="top-right uppercase">
                 <ul>
                     <li class="active"><a href="#">home</a></li>
-                    <li><a href="#" id="button2">about</a></li>
-                    <li><a href="#" id="button3">expertise</a></li>
-                    <li><a href="#" id="button4">teams</a></li>
-                    <li><a href="#" id="button5">works</a></li>
+                    <li><a href="#story" id="button2">about</a></li>
+                    <li><a href="#expertise" id="button3">expertise</a></li>
+                    <li><a href="#team" id="button4">teams</a></li>
+                    <li><a href="#works" id="button5">works</a></li>
                     <li><a href="#" id="button6">people say</a></li>
-                    <li><a href="#" id="button7">contact</a></li>
+                    <li><a href="#footer" id="button7">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -49,7 +53,7 @@
 <!-- -----------------TOP SECTION END------------------ -->
 
 <!-- -----------------OUR STORY SECTION------------------ -->
-    <section class="our-story">
+    <section class="our-story" id="story">
         <div class="big-logo">
             <img src="./images/photoshop/design-assets/png/logo-big.png" alt="" width="235px" height="229px">
         </div>
@@ -77,9 +81,9 @@
     </section>
 <!-- -----------------STORY VIDEO SECTION END------------------ -->
 
-     <!--START OF EXPERTISE GRID-->
+     <!------------------START OF EXPERTISE GRID--------------->
 
-    <div class="expertise">
+    <div class="expertise" id="expertise">
         <div class="expertise-headline uppercase text-center">
             <h2>expertise</h2>
         </div>
@@ -167,7 +171,7 @@
 <!-- -----------------EXPERTISE SECTION END------------------ -->
 <!------------------------ TEAM SECTION---------------- ---------->
 
-    <div class="team">
+    <div class="team" id="team">
         <div class="team-header">
             <h2 class="uppercase text-center">meet our amazing team</h2>
             <h3 class="text-center">Lorem ipsum dolor sit amet, consectetur adipis lac et al amet amet</h3>
@@ -207,7 +211,7 @@
 
 
 <!-- -----------------CLIENT SECTION ------------------ -->
-    <section class="client">
+    <section class="client" id="works">
         <div class="client-wrapper">
             <div class="left">
                 <div class="inner-left">
@@ -247,12 +251,12 @@
         
     </section>
 
-<!-- -----------------CLIENT SECTION END------------------ -->
+<!-------------------CLIENT SECTION END------------------->
 
 <!-------------------- SECTION FOOTER -------------------->
     
     <footer>
-        <section class="footer-wrapper">
+        <section class="footer-wrapper" id="footer">
 
             <!-------- WRAPPER LEFT ---------->
             <div class="wrapper-left">

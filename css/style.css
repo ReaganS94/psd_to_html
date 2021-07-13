@@ -1,5 +1,9 @@
 /* -----------------SHORTCUTS-------------- */
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .uppercase {
     text-transform: uppercase;
 }
