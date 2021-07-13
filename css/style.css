@@ -29,28 +29,12 @@
     text-align: center;
 }
 
-.grey-borders {
-    border-bottom: 1px solid #E8E8E8;
-    border-right: 1px solid #E8E8E8;
-}
-
-.square {
-    width: 280px;
-    height: 320px;
-    background-color: #ffffff;
-}
-
-.rectangle {
-    width: 278px;
-    height: 80px;
-    background-color: #00000000;
-    border: 1px solid #E8E8E8;
-}
 /* -----------------SHORTCUTS-------------- */
 .wrapper {
     background-image: url(../images/photoshop/design-assets/bgk-header.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 .top {
@@ -86,12 +70,10 @@
 .top-right ul {
     display: flex;
     justify-content: center;
-    
 }
 
 .top-right ul li {
     margin-left: 2em;
-    
 }
 
 .top-right ul li.active a {
@@ -109,9 +91,9 @@
 
 
 /*--------------------TOP-BOTTOM------------------*/
-@media (max-width: 870px){
+@media (max-width: 960px){
     .bottom h1 {
-        max-width: 70%;
+        width: 70%;
         text-align: center;
     }
 
@@ -160,13 +142,11 @@
     
 }
 
+/*----------------------TOP-BOTTOM END------------------------*/
+/*------------------------- END OF WEBSITE HEADER ------------ */
 
 
-/*----------------------------TOP-BOTTOM END-------------------------------*/
-/*------------------------- END OF WEBSITE HEADER ------------------------------- */
-
-
-/*-------------------------- OUR STORY SECTION -----------------------------------*/
+/*---------------------- OUR STORY SECTION ------------------*/
 
 .our-story {
     display: flex;
@@ -215,12 +195,9 @@
     color: #505050;
     padding-bottom: 1em;
 }
+/*------------------ OUR STORY SECTION END ------------------*/
 
-/*-------------------------- OUR STORY SECTION END -----------------------------------*/
-
-
-
-/*-------------------------- STORY VIDEO SECTION -----------------------------------*/
+/*--------------------- STORY VIDEO SECTION ------------------*/
 .watch-story {
     background-image: url(../images/photoshop/design-assets/bgk-middle.png);
     background-repeat: no-repeat;
@@ -238,6 +215,7 @@
     background-color: rgba(192, 192, 192, 0.400);
     border-radius: 50%;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .play-title {
@@ -248,9 +226,8 @@
     font-family: sans-serif;
 }
 
-/*------------------------ STORY VIDEO SECTION END -----------------------------------*/
-
-/* ---------------------------------------EXPERTISE SECTION--------------------------------- */
+/*-------------- STORY VIDEO SECTION END ------------*/
+/* ---------------EXPERTISE SECTION----------------- */
 
 .border {
     background-color: white;
@@ -266,13 +243,12 @@
 .grid > div {
     background-color: white;
     padding: 2em 0 3em 0; 
-  }
+}
 
 .item{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }  
 
 .icon{
@@ -338,8 +314,7 @@
     }
 }
 
-
-/*START TEAM*/
+/*-------------------------START TEAM------------------------------*/
 
 .team{
     background-image: url(/images/photoshop/design-assets/bgk-header.png);
@@ -369,7 +344,7 @@
     margin-bottom: 3em;
 }
 
-/* PHOTOPART */
+/* PHOTO PART */
 
 .team-photos{
     display: flex;
@@ -384,7 +359,6 @@
     height: 300px;
     background-color: white;
     margin-left: 1em;
-
 }
 
 .photo1 {
@@ -442,7 +416,6 @@
     border: solid 1px white;
     margin-left: 1em;
     color: white;
- 
 }
 
 .team-bottom{
@@ -469,10 +442,9 @@
     transition: 0.6s;
 }
 
-
 /* -----------------------CLIENT SECTION ------------------- */
 
-/* left */
+/*---------- left --------*/
 .client-wrapper {
     display: flex;
     width: 66%;
@@ -545,7 +517,7 @@
 
 /* -----------------------CLIENT SECTION END------------------- */
 
-/* -------------SECTION FOOTER------------- */
+/* -----------------------SECTION FOOTER------------- */
 footer {
     display: flex;
     background-image: url(/images/photoshop/design-assets/bgk-footer.png);
@@ -635,7 +607,7 @@ section.footer-wrapper {
     line-height: 2em;
     color: white;
     font-family: sans-serif;
-    margin-left: 10em;
+    padding-left: 10em;
 }
 
 .wrapper-right h3 {
